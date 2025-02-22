@@ -1,0 +1,174 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #045a29;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2em;
+    color: #2E8B57;
+}
+
+.textos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.textos div {
+    width: 30%;
+}
+
+.linha {
+    border-bottom: 2px solid #2E8B57;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.nutricao, .coach {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.nutricao img, .coach img {
+    width: 500px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.nutricao .texto, .coach .texto {
+    flex: 1;
+}
+
+.coach button {
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.coach button:hover {
+    background-color: #3CB371;
+}
+
+.receitas {
+    padding: 20px;
+    text-align: center;
+}
+
+.receitas h2 {
+    font-size: 2em;
+    color: #2E8B57;
+}
+
+.receitas-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.receita {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.receita .saiba-mais {
+    color: #2E8B57;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.receita .receita-completa {
+    display: none;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.receita .receita-completa.active {
+    display: block;
+}
+
+.receita img {
+    width: 100%;
+    height: auto;
+}
+
+.livro{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+.livro > img{
+    width: 300px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #2E8B57;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+footer p {
+    margin: 5px 0;
+}
