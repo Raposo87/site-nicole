@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #045a29;
+    background-color: #003e1b;
     color: white;
     padding: 20px;
     text-align: center;
@@ -16,13 +16,21 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5em;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .social-icons{
-    position: relative;
-    left: 57%;
-    margin-right: 51%;
-    bottom: 20px;
+    display: flex;
+}
+.social-icons .bx{
+    border-radius: 30%;
+    box-shadow: 2px 2px 3px #ddd;
+}
+.social-icons a{
+    color:#ddd;
+    font-size: 30px;
+    padding: 2px;
 }
 
 nav ul {
@@ -79,17 +87,17 @@ nav ul li a {
     flex-wrap: wrap;
 }
 
-.nutricao img, .coach img {
+.nutricao img, .massagem img {
     width: 500px;
     height: 300px;
     margin-right: 20px;
 }
 
-.nutricao .texto, .coach .texto {
+.nutricao .texto, .massagem .texto {
     flex: 1;
 }
 
-.coach button {
+.massagem button {
     background-color: #2E8B57;
     color: white;
     border: none;
@@ -98,7 +106,7 @@ nav ul li a {
     font-size: 1em;
 }
 
-.coach button:hover {
+.massagem button:hover {
     background-color: #3CB371;
 }
 
