@@ -48,3 +48,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//------ Alerta------//
+
+ // Função para mostrar o alerta
+ function showAlert() {
+    document.getElementById('customAlert').classList.add('show');
+}
+
+// Função para fechar o alerta
+function closeAlert() {
+    document.getElementById('customAlert').classList.remove('show');
+}
+
+// Detecta quando o usuário chegou ao final da página
+window.addEventListener('scroll', function() {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
+        showAlert();
+    }
+});
