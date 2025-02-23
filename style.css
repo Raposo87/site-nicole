@@ -86,40 +86,7 @@ header h1 {
   .menu-btn.open .menu-btn__burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
-  
-  /* Add these media queries to your media-query.css file */
-  @media screen and (max-width: 768px) {
-    .menu-btn {
-      display: flex;
-    }
-  
-    .nav {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 70%;
-      height: 100vh;
-      background: #003e1b;
-      padding-top: 80px;
-      transition: 0.5s;
-    }
-  
-    .nav.active {
-      right: 0;
-    }
-  
-    .nav-list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-list li {
-      margin: 15px 0;
-    }
-  }
-
-
+    
 nav ul {
     list-style: none;
     padding: 0;
