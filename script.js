@@ -19,3 +19,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+// Add this to your script.js file
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav');
+    let menuOpen = false;
+
+    menuBtn.addEventListener('click', () => {
+        if(!menuOpen) {
+            menuBtn.classList.add('open');
+            nav.classList.add('active');
+            menuOpen = true;
+        } else {
+            menuBtn.classList.remove('open');
+            nav.classList.remove('active');
+            menuOpen = false;
+        }
+    });
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('.nav-list a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuBtn.classList.remove('open');
+            nav.classList.remove('active');
+            menuOpen = false;
+        });
+    });
+});
