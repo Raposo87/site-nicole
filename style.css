@@ -167,21 +167,27 @@ nav ul li a {
     width: 80%;
 }
 
-.nutricao, .coach {
+.nutricao, .massagem {
     display: flex;
     align-items: center;
     padding: 20px;
     flex-wrap: wrap;
 }
 
-.nutricao img, .massagem img {
-    width: 500px;
+.nutricao img {
+    width: 400px;
     height: 300px;
     margin-right: 20px;
 }
 
 .nutricao .texto, .massagem .texto {
     flex: 1;
+}
+
+.massagem img {
+    width: 400px;
+    height: 300px;
+    margin-right: 20px;
 }
 
 .massagem button {
