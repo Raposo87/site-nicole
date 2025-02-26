@@ -51,7 +51,6 @@ header h1 {
     background: #fff;
     border-radius: 5px;
     transition: all .3s ease-in-out;
-    
   }
   
   .menu-btn__burger::before,
@@ -86,6 +85,23 @@ header h1 {
   .menu-btn.open .menu-btn__burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
+
+  nav {
+    display: block;  /* Certifique-se de que a navegação está visível */
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline-block;  /* Exibição inline para telas grandes */
+    margin: 0 15px;
+}
     
 nav ul {
     list-style: none;
@@ -134,7 +150,7 @@ nav ul li a {
     width: 80%;
 }
 
-.nutricao, .massagem {
+.naturopatia, .massagem, .reflexologia {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -147,7 +163,7 @@ nav ul li a {
     margin-right: 20px;
 }
 
-.nutricao .texto, .massagem .texto {
+.naturopatia .texto, .reflexologia .texto, .massagem .texto {
     flex: 1;
 }
 
@@ -167,7 +183,7 @@ nav ul li a {
     height: 100%;
 }
 
-.massagem button {
+.naturopatia button, .massagem button, .reflexologia button{
     background-color: #2E8B57;
     color: white;
     border: none;
@@ -176,7 +192,7 @@ nav ul li a {
     font-size: 1em;
 }
 
-.massagem button:hover {
+.naturopatia button:hover, .reflexologia button:hover, .massagem button:hover {
     background-color: #3CB371;
 }
 

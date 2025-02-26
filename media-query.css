@@ -1,86 +1,115 @@
 @media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 1.8em;
-    }
-    header h2{
-      font-size: 20px;
-    margin-bottom: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    }
-    header h3{
-      font-size: 15px;
-    }
+  .menu-btn {
+    display: flex;
+    margin-left: 17rem;
+  }
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #003e1b;
+    padding-top: 80px;
+    transition: 0.5s;
+  }
 
-    .textos {
-        flex-direction: column;
-        align-items: center;
-    }
+  .nav.active {
+    right: 0;
+  }
 
-    .textos div {
-        width: 90%;
-        margin-bottom: 20px;
-    }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .nutricao, .massagem, .livro {
-        flex-direction: column;
-        text-align: center;
-    }
+  .nav-list li {
+    margin: 15px 0;
+  }
 
-    .nutricao img, .massagem img, .livro img {
-        width: 100%;
-        height: auto;
-        margin: 0 0 20px 0;
-    }
-    .video-container {
-      width: 100%;
-      height: 0;
-      padding-bottom: 56.25%;
+  
+  header h1 {
+      font-size: 1.8em;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .textos div {
+      width: 90%;
       margin-bottom: 20px;
   }
+
+  .naturopatia  .texto, .massagem .texto, .reflexologia .texto, .livro {
+    flex-direction: column;
+    text-align: center;
+}
+  .video-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    margin-bottom: 20px;
 }
 
-    .receitas-container {
-        flex-direction: column;
-        align-items: center;
-    }
+.video-container video,
+.video-container img.video-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
-    .receita {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-    .menu-btn {
-        display: flex;
-        left: 7rem;
-      }
-    
-      .nav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 70%;
-        height: 100vh;
-        background: #003e1b;
-        padding-top: 80px;
-        transition: 0.5s;
-      }
-    
-      .nav.active {
-        right: 0;
-        height: 256px;
-      }
-    
-      .nav-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    
-      .nav-list li {
-        margin: 15px 0;
-      }
-  
+  .livro img {
+      width: 100%;
+      height: auto;
+      margin: 0 0 20px 0;
+  }
+  .livro {
+    flex-direction: column;
+    text-align: center;
+}
+
+  .receitas-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .receita {
+      width: 90%;
+      margin-bottom: 20px;
+  }
+
+
+/* Styles for recipe cards */
+.receita {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: white;
+}
+
+.receita .saiba-mais {
+  color: #2E8B57;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.receita .receita-completa {
+  display: none;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.receita .receita-completa.active {
+  display: block;
+}
+}
