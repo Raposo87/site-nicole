@@ -154,7 +154,8 @@ nav ul li a {
     display: flex;
     align-items: center;
     padding: 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .nutricao img {
