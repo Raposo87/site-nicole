@@ -17,6 +17,7 @@
 
   .nav.active {
     right: 0;
+    height: 296px;
   }
 
   .nav-list {
@@ -47,10 +48,10 @@
         transform: translateY(0) !important; /* Cancelar efeito em telas pequenas */
     }
 
-  .naturopatia  .texto, .massagem .texto, .reflexologia .texto, .livro {
-    flex-direction: column;
-    text-align: center;
-}
+    .serviço  .texto, .livro {
+      flex-direction: column;
+      text-align: center;
+  }
 .video-container {
   position: relative;
   width: 100%;

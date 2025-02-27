@@ -1,4 +1,30 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.textos .card');
+    let currentIndex = 0;
 
+    function checkScroll() {
+        const scrollPosition = window.scrollY;
+        const sectionTop = document.querySelector('.intro').offsetTop;
+        const sectionHeight = document.querySelector('.intro').offsetHeight;
+
+        // Verifica se o scroll está dentro da seção .intro
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            const scrollProgress = (scrollPosition - sectionTop) / sectionHeight;
+
+            // Ativa a próxima card com base no progresso do scroll
+            const targetIndex = Math.floor(scrollProgress * cards.length);
+            if (targetIndex !== currentIndex) {
+                cards[currentIndex].classList.remove('active');
+                cards[currentIndex].classList.add('stacked');
+                currentIndex = targetIndex;
+                cards[currentIndex].classList.add('active');
+            }
+        }
+    }
+
+    window.addEventListener('scroll', checkScroll);
+    checkScroll(); // Verifica o scroll ao carregar a página
+});
 
 // Efeito de empilhamento na seção intro
 const introBoxes = document.querySelectorAll('.textos div');

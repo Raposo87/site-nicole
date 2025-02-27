@@ -131,9 +131,11 @@ nav ul li a {
     overflow: hidden;
 }
 
-.intro h2 {
+.naturopatia h2 {
+    margin-top: 60px;
     font-size: 2em;
     color: #2E8B57;
+    text-align: center;
 }
 
 .textos {
@@ -154,21 +156,11 @@ nav ul li a {
     transition: transform 0.5s ease, opacity 0.5s ease;
     z-index: 1;
 }
-.textos div.active {
-    transform: translateY(-100%);
-    opacity: 0;
-}
-
-/* Estilos para o efeito de empilhamento */
-.textos div.stacked {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-
-
-/* Estilo para quando as divs estão empilhadas */
-.textos div.stacked {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.card{
+    display: flex;
+    position: static;
+    top: 0;
+    margin-left: 20px;
 }
 
 .linha {
@@ -177,7 +169,7 @@ nav ul li a {
     width: 80%;
 }
 
-.naturopatia, .massagem, .reflexologia {
+.serviço {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -185,16 +177,17 @@ nav ul li a {
     flex-wrap: nowrap;
 }
 
-.nutricao img {
+.serviço img {
+    display: flex;
     width: 400px;
     height: 300px;
-    margin-right: 20px;
+    margin: 0 auto;
 }
 
-.naturopatia .texto, .reflexologia .texto, .massagem .texto {
-    flex: 1;
+.serviço .texto, .livro {
+    flex-direction: column;
+    text-align: center;
 }
-
 .video-container {
     display: flex;
     justify-content: center;
