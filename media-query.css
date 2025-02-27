@@ -52,6 +52,12 @@
       flex-direction: column;
       text-align: center;
   }
+  .serviço img {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
 .video-container {
   position: relative;
   width: 100%;
