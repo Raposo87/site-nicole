@@ -122,6 +122,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Mostrar ou ocultar o botão conforme o usuário rola a página
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topo").style.display = "block";
+  } else {
+    document.getElementById("topo").style.display = "none";
+  }
+}
+
+// Voltar ao topo suavemente
+document.getElementById('topo').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
 //------ Alerta------//
 
 // Função para mostrar o alerta

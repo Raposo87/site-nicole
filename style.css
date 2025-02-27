@@ -275,6 +275,25 @@ nav ul li a {
     margin-right: 20px;
 }
 
+#topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Inicialmente oculto */
+    padding: 10px;
+    background-color: #2E8B57;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    z-index: 1000;
+  }
+  
+  #topo:hover {
+    background-color: #0056b3;
+  }
+
 footer {
     background-color: #2E8B57;
     color: white;
