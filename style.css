@@ -164,12 +164,7 @@ nav ul li a {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Para garantir que os elementos se sobreponham corretamente */
-.intro {
-    position: relative;
-    overflow: visible;
-    padding-bottom: 50px; /* Espaço extra para o efeito de empilhamento */
-}
+
 
 /* Estilo para quando as divs estão empilhadas */
 .textos div.stacked {
