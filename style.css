@@ -127,6 +127,8 @@ nav ul li a {
 .intro {
     padding: 20px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .intro h2 {
@@ -136,12 +138,42 @@ nav ul li a {
 
 .textos {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
 }
 
 .textos div {
-    width: 30%;
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 1;
+}
+.textos div.active {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+/* Estilos para o efeito de empilhamento */
+.textos div.stacked {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Para garantir que os elementos se sobreponham corretamente */
+.intro {
+    position: relative;
+    overflow: visible;
+    padding-bottom: 50px; /* Espaço extra para o efeito de empilhamento */
+}
+
+/* Estilo para quando as divs estão empilhadas */
+.textos div.stacked {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .linha {

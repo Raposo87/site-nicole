@@ -39,10 +39,13 @@
       margin: 10px 0;
   }
 
-  .textos div {
-      width: 90%;
-      margin-bottom: 20px;
-  }
+   .textos div {
+        width: 90%;
+    }
+    
+    .textos div.stacked {
+        transform: translateY(0) !important; /* Cancelar efeito em telas pequenas */
+    }
 
   .naturopatia  .texto, .massagem .texto, .reflexologia .texto, .livro {
     flex-direction: column;
