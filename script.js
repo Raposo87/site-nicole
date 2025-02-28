@@ -1,4 +1,92 @@
+// Agora, adicione este código ao seu arquivo script.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Configuração básica do ScrollReveal
+    const sr = ScrollReveal({
+        origin: 'bottom',
+        distance: '10px',
+        duration: 1000,
+        delay: 200,
+        easing: 'ease-in-out',
+        reset: false
+    });
 
+    // Revelar elementos de cada seção
+    // Naturopatia
+    sr.reveal('.naturopatia h2', {
+        delay: 100
+    });
+    sr.reveal('.naturopatia .video-container', {
+        delay: 300
+    });
+    sr.reveal('.naturopatia .texto', {
+        delay: 500
+    });
+
+    // Acompanhamento
+    sr.reveal('.acompanhamento img', {
+        origin: 'left'
+    });
+    sr.reveal('.acompanhamento .texto', {
+        origin: 'right'
+    });
+
+    // Reflexologia
+    sr.reveal('.reflexologia .video-container', {
+        origin: 'left'
+    });
+    sr.reveal('.reflexologia .texto', {
+        origin: 'right'
+    });
+
+    // Acupuntura
+    sr.reveal('.acupuntura img', {
+        origin: 'left'
+    });
+    sr.reveal('.acupuntura .texto', {
+        origin: 'right'
+    });
+
+    // Massagem
+    sr.reveal('.massagem .video-container', {
+        origin: 'left'
+    });
+    sr.reveal('.massagem .texto', {
+        origin: 'right'
+    });
+
+    // Velas
+    sr.reveal('.Velas img', {
+        origin: 'left'
+    });
+    sr.reveal('.Velas .texto', {
+        origin: 'right'
+    });
+
+    // Depoimentos
+    sr.reveal('.depoimentos h2');
+    sr.reveal('.carousel-container', {
+        delay: 300
+    });
+
+    // Receitas
+    sr.reveal('.receitas h2');
+    sr.reveal('.receita', {
+        interval: 200 // Cada receita aparece com 200ms de intervalo
+    });
+
+    // Livro
+    sr.reveal('.livro img', {
+        origin: 'right'
+    });
+    sr.reveal('.livro .texto', {
+        origin: 'left'
+    });
+
+    // Footer
+    sr.reveal('footer', {
+        delay: 100
+    });
+});
 
 // Efeito de empilhamento na seção intro
 const introBoxes = document.querySelectorAll('.textos div');
@@ -183,92 +271,3 @@ document.addEventListener('DOMContentLoaded', function() {
     checkVisibility();
 });
 
-// Agora, adicione este código ao seu arquivo script.js
-document.addEventListener('DOMContentLoaded', function() {
-    // Configuração básica do ScrollReveal
-    const sr = ScrollReveal({
-        origin: 'bottom',
-        distance: '60px',
-        duration: 1000,
-        delay: 200,
-        easing: 'ease-in-out',
-        reset: false
-    });
-
-    // Revelar elementos de cada seção
-    // Naturopatia
-    sr.reveal('.naturopatia h2', {
-        delay: 100
-    });
-    sr.reveal('.naturopatia .video-container', {
-        delay: 300
-    });
-    sr.reveal('.naturopatia .texto', {
-        delay: 500
-    });
-
-    // Acompanhamento
-    sr.reveal('.acompanhamento img', {
-        origin: 'left'
-    });
-    sr.reveal('.acompanhamento .texto', {
-        origin: 'right'
-    });
-
-    // Reflexologia
-    sr.reveal('.reflexologia .video-container', {
-        origin: 'left'
-    });
-    sr.reveal('.reflexologia .texto', {
-        origin: 'right'
-    });
-
-    // Acupuntura
-    sr.reveal('.acupuntura img', {
-        origin: 'left'
-    });
-    sr.reveal('.acupuntura .texto', {
-        origin: 'right'
-    });
-
-    // Massagem
-    sr.reveal('.massagem .video-container', {
-        origin: 'left'
-    });
-    sr.reveal('.massagem .texto', {
-        origin: 'right'
-    });
-
-    // Velas
-    sr.reveal('.Velas img', {
-        origin: 'left'
-    });
-    sr.reveal('.Velas .texto', {
-        origin: 'right'
-    });
-
-    // Depoimentos
-    sr.reveal('.depoimentos h2');
-    sr.reveal('.carousel-container', {
-        delay: 300
-    });
-
-    // Receitas
-    sr.reveal('.receitas h2');
-    sr.reveal('.receita', {
-        interval: 200 // Cada receita aparece com 200ms de intervalo
-    });
-
-    // Livro
-    sr.reveal('.livro img', {
-        origin: 'right'
-    });
-    sr.reveal('.livro .texto', {
-        origin: 'left'
-    });
-
-    // Footer
-    sr.reveal('footer', {
-        delay: 100
-    });
-});
