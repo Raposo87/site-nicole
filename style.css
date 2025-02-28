@@ -1,4 +1,15 @@
-
+:root{
+    --h1-cabeçalho: #F2F2F2;
+    --h1: #2E8B57;
+    --h2: #2E8B57;
+    --p: #8FBFBF;
+    --text-color: #000000;
+    --bg-color: #2D6C73;
+    --midia-social: #F2F2F2;
+    --color: white;
+    --h1: "Afacad Flux", serif;
+    --p: "Playwrite CO Guides", serif;
+}
 
 body {
     font-family: 'Georgia', serif;
@@ -29,10 +40,10 @@ header h1 {
 }
 .social-icons .bx{
     border-radius: 30%;
-    box-shadow: 2px 2px 3px #ddd;
+    box-shadow: 2px 2px 3px white;
 }
 .social-icons a{
-    color:#ddd;
+    color: var(--midia-social);
     font-size: 30px;
     padding: 2px;
 }
@@ -132,7 +143,7 @@ nav ul li a {
 .naturopatia h2 {
     margin-top: 60px;
     font-size: 2em;
-    color: #2E8B57;
+    color: var(--h2);
     text-align: center;
 }
 
@@ -172,7 +183,7 @@ nav ul li a {
     margin-left: 10%;
 }*/
 .serviço {
-    background-color: #F2F2F2;
+    background-color: #fffcf3;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -233,8 +244,8 @@ nav ul li a {
   }
 
 .serviço button{
-    background-color: #2E8B57;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--midia-social);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -299,7 +310,7 @@ nav ul li a {
 
 .receitas h2 {
     font-size: 2em;
-    color: #2E8B57;
+    color: var(--h1-cabeçalho);
 }
 
 .receitas-container {
@@ -311,10 +322,10 @@ nav ul li a {
 .receita {
     position: relative;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--h1-cabeçalho);
     border-radius: 8px;
     margin-bottom: 20px;
-    background: white;
+    background: var(--h1-cabeçalho);
 }
 
 .receita .saiba-mais {
@@ -346,13 +357,16 @@ nav ul li a {
     display: flex;
     align-items: center;
     padding: 20px;
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
-.livro > img{
+.livro  img{
     width: 300px;
     height: 400px;
     margin-right: 20px;
+}
+.livro .texto{
+    color: white;
 }
 
 #topo {
@@ -368,7 +382,7 @@ nav ul li a {
     font-size: 20px;
     text-decoration: none;
     z-index: 1000;
-    border: 1px solid white;
+    border: 1px solid var(--text-color);
   }
   
   #topo:hover {
