@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Configuração básica do ScrollReveal
     const sr = ScrollReveal({
         origin: 'bottom',
-        distance: '10px',
+        distance: '20px',
         duration: 1000,
         delay: 200,
         easing: 'ease-in-out',
