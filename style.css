@@ -364,7 +364,7 @@ nav ul li a {
 #topo {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 29px;
     display: none; /* Inicialmente oculto */
     padding: 10px;
     background-color: #2E8B57;
