@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Georgia', serif;
     margin: 0;
@@ -7,9 +9,9 @@ body {
 }
 
 header {
-    background-color: #003e1b;
+    background-color: #2D6C73;
     color: white;
-    padding: 20px;
+    padding: 16px;
     text-align: center;
 }
 
@@ -124,12 +126,6 @@ nav ul li a {
     height: auto;
 }
 
-.intro {
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
 
 .naturopatia h2 {
     margin-top: 60px;
@@ -214,6 +210,9 @@ nav ul li a {
 }
 
 .depoimentos {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.792), rgba(255, 255, 255, 0.791)),url('ChatOn\ image\ \(1\).jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
     padding: 40px 20px;
     text-align: center;
     background-color: #f9f9f9;
