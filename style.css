@@ -13,6 +13,7 @@ header {
     color: white;
     padding: 16px;
     text-align: center;
+    height: 200px;
 }
 
 header h1 {
@@ -21,6 +22,7 @@ header h1 {
     margin-bottom: 50px;
     font-family: 'Times New Roman', Times, serif;
 }
+
 
 .social-icons{
     display: flex;

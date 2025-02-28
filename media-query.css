@@ -1,7 +1,8 @@
 @media screen and (max-width: 768px) {
   .menu-btn {
     display: flex;
-    margin-left: 17rem;
+    margin-left: 20rem;
+    top: -37px;
   }
 
   .nav {
