@@ -5,6 +5,7 @@
     --p: #8FBFBF;
     --text-color: #000000;
     --bg-color: #2D6C73;
+    --section:#E3E1D5;
     --midia-social: #F2F2F2;
     --color: white;
     --h1: "Afacad Flux", serif;
@@ -183,7 +184,7 @@ nav ul li a {
     margin-left: 10%;
 }*/
 .serviço {
-    background-color: #fffcf3;
+    background-color: #E3E1D5;
     display: flex;
     align-items: center;
     padding: 20px;
