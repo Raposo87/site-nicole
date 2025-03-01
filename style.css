@@ -1,5 +1,5 @@
 :root{
-    --h1-cabeçalho: #F2F2F2;
+    --h1-cabeçalho:  #F2F2F2;
     --h1: #2E8B57;
     --h2: #2E8B57;
     --p: #8FBFBF;
@@ -23,18 +23,25 @@ body {
 header {
     background-color: #2D6C73;
     color: white;
-    padding: 16px;
+    padding: 8px;
     text-align: center;
-    height: 200px;
+    height: 169px;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    margin-bottom: 50px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1px;
+    padding: 2px;
 }
-
+header h3{
+    font-family: "Afacad Flux", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .social-icons{
     display: flex;
@@ -406,7 +413,7 @@ nav ul li a {
     height: 400px;
     margin-right: 20px;
 }
-.livro .texto, h3{
+.livro, p > h3{
     color: white;
 }
 
