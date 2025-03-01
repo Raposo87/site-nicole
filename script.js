@@ -201,73 +201,35 @@ window.addEventListener('scroll', function() {
         showAlert();
     }
 });
-
-// carrossel
 document.addEventListener('DOMContentLoaded', function() {
-    // Configuração do carrossel de depoimentos
     const track = document.querySelector('.carousel-track');
     const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+    const prevButton = document.querySelector('.carousel-button.prev');
+    const nextButton = document.querySelector('.carousel-button.next');
     let currentIndex = 0;
-    const slideWidth = 100; // 100% da largura do contêiner
-    
+
     // Função para mover o carrossel
     function moveToSlide(index) {
-        // Atualiza a posição do carrossel
-        track.style.transform = `translateX(-${index * slideWidth}%)`;
+        if (index < 0) {
+            index = slides.length - 1; // Volta para o último slide se estiver no início
+        } else if (index >= slides.length) {
+            index = 0; // Volta para o primeiro slide se estiver no final
+        }
+
+        track.style.transform = `translateX(-${index * 100}%)`;
         currentIndex = index;
     }
-    
-    // Função para avançar para o próximo slide
-    function moveNext() {
-        // Se estiver no último slide, volta para o primeiro
-        if (currentIndex === slides.length - 1) {
-            // Adiciona uma pequena transição suave
-            track.style.transition = 'none';
-            moveToSlide(0);
-            // Força um reflow/repaint para que a transição seja aplicada
-            setTimeout(() => {
-                track.style.transition = 'transform 0.5s ease';
-            }, 10);
-        } else {
-            // Avança para o próximo slide
-            moveToSlide(currentIndex + 1);
-        }
-    }
-    
-    // Iniciar o carrossel automático
-    let carouselInterval = setInterval(moveNext, 5000); // Muda a cada 5 segundos
-    
-    // Pausar o carrossel quando o mouse estiver sobre ele
-    const carouselContainer = document.querySelector('.carousel-container');
-    
-    carouselContainer.addEventListener('mouseenter', () => {
-        clearInterval(carouselInterval);
-    });
-    
-    carouselContainer.addEventListener('mouseleave', () => {
-        carouselInterval = setInterval(moveNext, 5000);
-    });
-    
-    // Verifica se a seção está visível antes de iniciar o carrossel
-    function checkVisibility() {
-        const depoimentos = document.querySelector('.depoimentos');
-        const rect = depoimentos.getBoundingClientRect();
-        const isVisible = (
-            rect.top >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-        );
-        
-        if (isVisible) {
-            // Reinicia o carrossel se estiver visível
-            clearInterval(carouselInterval);
-            carouselInterval = setInterval(moveNext, 5000);
-        }
-    }
-    
-    // Verifica a visibilidade ao rolar a página
-    window.addEventListener('scroll', checkVisibility);
-    
-    // Inicia o carrossel
-    checkVisibility();
-});
 
+    // Evento para o botão "próximo"
+    nextButton.addEventListener('click', () => {
+        moveToSlide(currentIndex + 1);
+    });
+
+    // Evento para o botão "anterior"
+    prevButton.addEventListener('click', () => {
+        moveToSlide(currentIndex - 1);
+    });
+
+    // Inicializa o carrossel no primeiro slide
+    moveToSlide(0);
+});
