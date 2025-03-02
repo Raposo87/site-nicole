@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         origin: 'bottom',
         distance: '20px',
         duration: 1000,
-        delay: 200,
+        delay: 300,
         easing: 'ease-in-out',
         reset: false
     });
