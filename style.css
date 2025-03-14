@@ -148,8 +148,9 @@ nav ul li a {
 }
 
 
-.naturopatia h2 {
+.serviço h2 {
     margin-top: 60px;
+    margin-bottom: 5rem;
     font-size: 2em;
     color: #4ea8a8;
     text-align: center;
@@ -175,21 +176,19 @@ nav ul li a {
 }
 
 .linha {
-    border-bottom: 2px solid #26593c;
+    border-bottom: 1px solid #4ea8a8;
     margin: 20px auto;
-    width: 80%;
+    width: 100%;
 }
 
-/*.serviço {
-    background-color: #F2F2F2;
-    display: flex
-    padding: 0px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 80%;
-    justify-content: center;
-    margin-left: 10%;
-}*/
+
+.conteiner{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+
 .serviço {
     background-color: #E3E1D5;
     display: flex;
@@ -199,45 +198,18 @@ nav ul li a {
     flex-wrap: nowrap;
 }
 
-/*.serviço {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-}*/
-/*.serviço > div {
-    width: 48%;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}*/
-
-
 .serviço img {
     display: flex;
     width: 400px;
-    height: 300px;
+    height: 315px;
     margin: 0 auto;
 }
-/*.serviço img,
-.video-container {
-    max-width: 100%;
-    height: auto;
-}*/
 
 .serviço .texto, .livro {
     flex-direction: column;
     text-align: center;
+    margin: 15px 40px;
 }
-/*.serviço .texto {
-    width: 100%;
-    text-align: center;
-}*/
-/*.linha {
-    width: 100%;
-    margin: 10px 0 20px 0;
-}*/
 
 .video-container {
     display: flex;
@@ -245,6 +217,7 @@ nav ul li a {
     align-items: center;
     width: 100%;
     margin: 0 auto;
+    width: 400px;
   }
   
   .video-container iframe {
@@ -260,7 +233,17 @@ nav ul li a {
     font-size: 1em;
 }
 
-.naturopatia button:hover, .reflexologia button:hover, .massagem button:hover {
+.velas .linha{
+    margin-top: 37px;
+}
+.acompanhamento .linha{
+    margin-top: 58px;
+}
+.reflexologia .linha{
+    margin-top: 43px;
+}
+
+.naturopatia button:hover, .reflexologia button:hover, .massagem button:hover, .acupuntura button:hover, .acompanhamento button:hover, .velas button:hover {
     background-color: #3CB371;
 }
 
@@ -316,8 +299,8 @@ nav ul li a {
     width: 100%;
 }
 .carousel-button {
-    background-color: var(--bg-color);
-    color: white;
+    background: none;
+    color: var(--bg-color);
     border: none;
     cursor: pointer;
     padding: 10px 20px;
@@ -340,7 +323,7 @@ nav ul li a {
 }
 
 .carousel-button:hover {
-    background-color: var(--h2);
+    background-color: var(--bg-color);
 }
 
 .prev {
@@ -395,7 +378,6 @@ nav ul li a {
 .receita .receita-completa.active {
     display: block;
 }
-
 .receita img {
     width: 100%;
     height: auto;
