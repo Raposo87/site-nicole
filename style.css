@@ -1,15 +1,16 @@
 :root{
-    --h1-cabeçalho:  #F2F2F2;
+    --h1-cabeçalho:  #f2f2f2;
     --h1: #2E8B57;
     --h2: #2E8B57;
     --p: #8FBFBF;
     --text-color: #000000;
     --bg-color: #2D6C73;
     --section:#E3E1D5;
-    --midia-social: #F2F2F2;
+    --midia-social: #f2f2f2;
     --color: white;
     --h1: "Afacad Flux", serif;
     --p: "Playwrite CO Guides", serif;
+    --serviço: #ffffffef;
 }
 
 body {
@@ -190,7 +191,7 @@ nav ul li a {
 
 
 .serviço {
-    background-color: #E3E1D5;
+    background-color: var(--serviço);
     display: flex;
     align-items: center;
     padding: 20px;
@@ -262,7 +263,7 @@ nav ul li a {
 }
 
 .velas .linha{
-    margin-top: 37px;
+    margin-top: 55px;
 }
 .acompanhamento .linha{
     margin-top: 58px;
