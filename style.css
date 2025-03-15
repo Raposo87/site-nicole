@@ -233,6 +233,34 @@ nav ul li a {
     font-size: 1em;
 }
 
+.pulse-button {
+    background-color: var(--h2);
+    color: white; 
+    padding: 15px 30px; 
+    border: none;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Transição suave */
+    animation: pulse 2s infinite; /* Aplica a animação de pulsação */
+}
+
+
+/* Definição da animação de pulsação */
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Tamanho normal */
+    }
+    50% {
+        transform: scale(1.05); /* Aumenta ligeiramente */
+    }
+    100% {
+        transform: scale(1); /* Volta ao tamanho normal */
+    }
+}
+
 .velas .linha{
     margin-top: 37px;
 }
