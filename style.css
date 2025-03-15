@@ -247,6 +247,66 @@ nav ul li a {
     background-color: #3CB371;
 }
 
+.slide-section {
+    position: relative; /* Contexto de posicionamento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+  }
+  
+  .slide-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: white;
+    margin: 50px;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Ajuste conforme necessário */
+  }
+  
+  .slide-container {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .text-container {
+    margin-top: 20px;
+    margin: 15px 40px;
+  }
+
+
 .depoimentos {
     background-image: linear-gradient(rgba(255, 255, 255, 0.792), rgba(255, 255, 255, 0.791)),url('img\ fundo.jpeg');
     background-repeat: no-repeat;
@@ -395,7 +455,11 @@ nav ul li a {
     height: 400px;
     margin-right: 20px;
 }
-.livro, p > h3{
+.livro > .texto{
+    color: white;
+}
+.livro h2{
+    font-size: 2em;
     color: white;
 }
 
