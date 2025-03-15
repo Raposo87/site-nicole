@@ -99,6 +99,9 @@
   height: 444px;
   object-fit: cover;
 }
+.text-container {
+  color: white;
+}
 
 
 .velas .linha{
@@ -224,6 +227,6 @@
 
   .text-container {
     flex: 1;
-    margin-top: 0;
+    color: white;
   }
 }
