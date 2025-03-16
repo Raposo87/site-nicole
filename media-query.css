@@ -230,4 +230,13 @@
     flex: 1;
     color: white;
   }
+  .depoimentos {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.792), rgba(255, 255, 255, 0.791)),url('https://i.pinimg.com/474x/a2/02/8e/a2028e916a217c56f5657fb1bbd62779.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80% 90%;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
 }
