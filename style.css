@@ -574,3 +574,7 @@ footer p {
     float: right;
     cursor: pointer;
 }
+.igor{
+    font-size: 0.8rem;
+    text-align: center;
+}
